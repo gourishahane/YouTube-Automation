@@ -151,8 +151,9 @@ public class TestCases extends ExcelDataProvider{ // Lets us read the data
                         wait.until(ExpectedConditions.urlContains("youtube"));
                         softAssert.assertTrue(driver.getCurrentUrl().contains("youtube"), "Not on YouTube!");
                         System.out.println("URL contains 'youtube'.");
+                        Thread.sleep(2000);
 
-                        WebElement musicLink=driver.findElement(By.xpath("//yt-formatted-string[text()='Music']"));
+                        WebElement musicLink=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//yt-formatted-string[text()='Music']")));
                         Wrappers.clickElement(driver, musicLink);
                         Thread.sleep(3000);
 
@@ -204,9 +205,10 @@ public class TestCases extends ExcelDataProvider{ // Lets us read the data
                         wait.until(ExpectedConditions.urlContains("youtube"));
                         softAssert.assertTrue(driver.getCurrentUrl().contains("youtube"), "Not on YouTube!");
                         System.out.println("URL contains 'youtube'.");
+                        Thread.sleep(2000);
 
-                        WebElement musicLink=driver.findElement(By.xpath("//yt-formatted-string[text()='News']"));
-                        Wrappers.clickElement(driver, musicLink);
+                        WebElement newsLink=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//yt-formatted-string[text()='News']")));
+                        Wrappers.clickElement(driver, newsLink);
                         Thread.sleep(3000);
 
                         WebElement newsHeader=driver.findElement(By.xpath("//span[text()='News']"));
@@ -272,6 +274,7 @@ public class TestCases extends ExcelDataProvider{ // Lets us read the data
                         System.out.println("URL contains 'youtube'.");
 
                         WebElement searchField=driver.findElement(By.xpath("//input[@aria-label='Search']"));
+                        searchField.clear();
                         searchField.sendKeys(searchTerm);
                         searchField.sendKeys(Keys.ENTER);
 
