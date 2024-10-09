@@ -45,16 +45,21 @@ public class Wrappers {
         return elemetText;
     }
     public static double convertViewsText(String viewText) {
-        // Remove the word "views" and trim any whitespace
-        viewText = viewText.replace("views", "").trim();
-
-        // Check the last character to determine the multiplier
+        // Remove "views", "watching", or any other trailing text, and trim any whitespace
+        viewText = viewText.replaceAll("[^0-9\\.MKBG]", "").trim();
+    
+        // If the last character is not a digit, it's a suffix (K, M, B)
         char suffix = viewText.charAt(viewText.length() - 1);
-
-        // Extract the numerical part
+    
+        // If the last character is a digit, no suffix is present
+        if (Character.isDigit(suffix)) {
+            return Double.parseDouble(viewText); // Just a plain number
+        }
+    
+        // Extract the numerical part (e.g., "22" from "22M" or "1.2" from "1.2K")
         double number = Double.parseDouble(viewText.substring(0, viewText.length() - 1));
-
-        // Multiply based on suffix
+    
+        // Multiply based on the suffix
         switch (suffix) {
             case 'M':
                 return number * 1_000_000; // Millions
@@ -62,9 +67,12 @@ public class Wrappers {
                 return number * 1_000_000_000; // Billions
             case 'K':
                 return number * 1_000; // Thousands
+            case 'G': // In case of billions marked as 'G' or something else
+                return number * 1_000_000_000; // Treat G as Billion
             default:
-                // If no suffix, it's just a raw number (e.g., "500 views")
-                return Double.parseDouble(viewText);
+                // If no valid suffix, just return the parsed number
+                return number;
         }
     }
+    
 }

@@ -2,20 +2,20 @@
 <testng-results total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-09T08:39:39Z" name="Test Suite for Buildout" finished-at="2024-10-09T08:40:48Z" duration-ms="69613">
+  <suite started-at="2024-10-09T08:52:13Z" name="Test Suite for Buildout" finished-at="2024-10-09T08:53:24Z" duration-ms="71649">
     <groups>
     </groups>
-    <test started-at="2024-10-09T08:39:39Z" name="Test Cases for Buildout" finished-at="2024-10-09T08:40:48Z" duration-ms="69613">
+    <test started-at="2024-10-09T08:52:13Z" name="Test Cases for Buildout" finished-at="2024-10-09T08:53:24Z" duration-ms="71649">
       <class name="demo.TestCases">
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:09:39Z" name="startBrowser" finished-at="2024-10-09T14:09:41Z" duration-ms="2215" status="PASS">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:22:13Z" name="startBrowser" finished-at="2024-10-09T14:22:15Z" duration-ms="2192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method signature="testCase01()[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:09:41Z" name="testCase01" finished-at="2024-10-09T14:09:46Z" duration-ms="5168" status="PASS">
+        <test-method signature="testCase01()[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:22:15Z" name="testCase01" finished-at="2024-10-09T14:22:20Z" duration-ms="5547" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase01 -->
-        <test-method signature="testCase02()[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:09:46Z" name="testCase02" finished-at="2024-10-09T14:10:01Z" duration-ms="15003" status="FAIL">
+        <test-method signature="testCase02()[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:22:20Z" name="testCase02" finished-at="2024-10-09T14:22:35Z" duration-ms="15101" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -74,15 +74,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase02 -->
-        <test-method signature="testCase03()[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:10:01Z" name="testCase03" finished-at="2024-10-09T14:10:18Z" duration-ms="17179" status="PASS">
+        <test-method signature="testCase03()[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:22:35Z" name="testCase03" finished-at="2024-10-09T14:22:53Z" duration-ms="17396" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase03 -->
-        <test-method signature="testCase04()[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:10:18Z" name="testCase04" finished-at="2024-10-09T14:10:29Z" duration-ms="10733" status="PASS">
+        <test-method signature="testCase04()[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:22:53Z" name="testCase04" finished-at="2024-10-09T14:23:03Z" duration-ms="10072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase04 -->
-        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:10:30Z" name="testCase05" data-provider="excelData" finished-at="2024-10-09T14:10:36Z" duration-ms="6911" status="PASS">
+        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:23:03Z" name="testCase05" data-provider="excelData" finished-at="2024-10-09T14:23:10Z" duration-ms="6790" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -93,7 +93,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase05 -->
-        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:10:36Z" name="testCase05" data-provider="excelData" finished-at="2024-10-09T14:10:41Z" duration-ms="4376" status="PASS">
+        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:23:10Z" name="testCase05" data-provider="excelData" finished-at="2024-10-09T14:23:17Z" duration-ms="6446" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,7 +104,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase05 -->
-        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:10:41Z" name="testCase05" data-provider="excelData" finished-at="2024-10-09T14:10:47Z" duration-ms="6498" status="PASS">
+        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:23:17Z" name="testCase05" data-provider="excelData" finished-at="2024-10-09T14:23:23Z" duration-ms="6542" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,7 +115,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase05 -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:10:47Z" name="endTest" finished-at="2024-10-09T14:10:48Z" duration-ms="966" status="PASS">
+        <test-method is-config="true" signature="endTest()[pri:0, instance:demo.TestCases@63fdab07]" started-at="2024-10-09T14:23:23Z" name="endTest" finished-at="2024-10-09T14:23:24Z" duration-ms="973" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
