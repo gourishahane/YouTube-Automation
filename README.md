@@ -57,12 +57,12 @@ Console Logs: Detailed console logs for each test case, including extracted vide
 Data Storage: Option to save extracted data into files (e.g., CSV, JSON) for offline analysis.
 
 ## Dependencies
-Selenium WebDriver: For browser automation.
-TestNG: For test case execution and assertions.
-Gradle: As the build and dependency management tool.
+- Selenium WebDriver: For browser automation.
+- TestNG: For test case execution and assertions.
+- Gradle: As the build and dependency management tool.
 
 ## Contact Information
-Name: Gouri Shahane
-Email: gouri.shahane@example.com
-GitHub: github.com/gourishahane
-LinkedIn: linkedin.com/in/gourishahane
+- Name: Gouri Shahane
+- Email: gouri.shahane@example.com
+- GitHub: github.com/gourishahane
+- LinkedIn: linkedin.com/in/gourishahane
